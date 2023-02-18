@@ -8,7 +8,7 @@ function Index ({ breads }) {
         <p>I have {breads[0].name} bread!</p>
        <ul>
             {
-                breads.map((bread, index)) => {
+                breads.map((bread, index) => {
                     return (
                         <li key={index}>
                             <a href={`/breads/${index}`}>
@@ -20,7 +20,7 @@ function Index ({ breads }) {
             }
        </ul>
       </Default>
-    )
+    
 }
 
 module.exports = Index
